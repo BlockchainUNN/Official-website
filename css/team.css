@@ -10,6 +10,10 @@
     font-family: Montserrat;
     src: url(./fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
+@font-face {
+    font-family: Monument Extended;
+    src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,6 +24,7 @@ body{
     margin: auto;
     box-sizing: border-box;
 }
+
 /* Navbar */
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
@@ -196,17 +201,6 @@ header,section{
     padding-left: 3rem;
     padding-right: 3rem;
 }
-
-header h1{
-    font-family: Monument Extended;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-top: 8rem;
-    margin-bottom: 2rem;
-}
 .b-heading {
     font-family: Monument Extended;
     font-size: 30px;
@@ -215,6 +209,7 @@ header h1{
     letter-spacing: 0em;
     color: black;
     width: 50%;
+    padding-top: 8rem;
 }
 .b-overline {
     text-decoration: none; 
@@ -237,12 +232,15 @@ header h1{
     transition:.5s;
 }
 
-/* hover classes used with anmiation */
-.b-overline:hover:before {
-    width: 30%;
-    background: rgba(11, 102, 35, 0.3);
- }
-
+.b-heading {
+    font-family: Monument Extended;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: black;
+    width: 50%;
+}
 
 section{
     display: flex;
@@ -361,9 +359,6 @@ footer hr {
 }
 
 @media (max-width:1140px) and (min-width:761px){
-    header h1{
-        font-size: 30px;
-    }
     article{
         flex-direction: column;
     }
@@ -411,12 +406,9 @@ footer hr {
         width: 100%;
         margin-bottom: -8rem;
     }
-    header h1{
-        font-size: 22px;
-        font-weight: 800;
-        line-height: 26px;
-        letter-spacing: 0em;
-        text-align: left; 
+    .b-heading {
+        font-size: 20px;
+        width: 100%;
     }
     .photo{
         border-top-left-radius: 30px;

@@ -16,7 +16,7 @@ body{
     overflow-x: hidden;
     background-color: whitesmoke;
 }
-
+  
 .main-content {
     overflow-x: hidden !important;
 }
@@ -320,12 +320,6 @@ body{
  }
   
 
-/* hover classes used with anmiation */
-.b-overline:hover:before {
-    width: 80%;
-    background: rgba(11, 102, 35, 0.3);
- }
-
 #web3bridge, #blockchain4u, #gida, #a1hub {
     width: 200px;
     height: 100px;
@@ -364,10 +358,6 @@ body{
     .b-overline:before {
         width: 25%;
         margin-left: 2rem;
-    }
-
-    .b-overline:hover:before {
-        width: 40%;
     }
 
     .b-partners {
