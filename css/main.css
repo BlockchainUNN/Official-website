@@ -192,22 +192,14 @@ body{
     border-radius: 0px 0px 120px 0px;
     position: relative;
     padding-inline: -4rem;
+    background-image: url("../images/header.jpg");
 }
 
-.heading-section::after{
-    content: "";
-    background: url("../images/header.jpg");
-    opacity: 0.25;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
+.shadow {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 90vh;
+    width: 100%;
     border-radius: 0px 0px 120px 0px;
-}
-
-.heading-section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,7 +214,7 @@ body{
 
 .heading-section p{
     font-size: 23px;
-    color: black;
+    color: white;
     margin: 20px 0px;
 }
 
@@ -251,11 +243,11 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0px 0px 120px 0px;
+        border-radius: 0px;
     }
 
-    .heading-section::after{
-        border-radius: 0px 0px 120px 0px;
+    .shadow {
+        border-radius: 0px;
     }
 
     .heading-section h1 {
@@ -268,8 +260,7 @@ body{
 
     .heading-section p {
         font-size: 20px;
-        margin: 20px 0px;
-        width: 70%;
+        margin: 20px 15px;
     }
 }
 
@@ -952,9 +943,9 @@ footer hr {
     }
     .team-section main{
         display: flex;
-        width: 90%;
+        width: 100%;
         flex-direction: column;
-        gap: 6rem;
+        gap: 3rem;
         align-self: center;
      }
      .main2{
@@ -973,7 +964,7 @@ footer hr {
      }
      .cofoundersImages{
         width: 100%;
-        height: 250px;
+        height: 300px;
         border-radius: 20px 20px 0px 0px;
     }
     .others{
@@ -983,11 +974,7 @@ footer hr {
     .team-section h5{
         font-size: 22px;
     }
-    .otherTeam ul{
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
-    }
+
     .community{
         margin-inline: 0rem;
     }
